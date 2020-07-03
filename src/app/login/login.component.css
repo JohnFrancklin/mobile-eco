@@ -1,1 +1,68 @@
-/* Add mobile styles for the component here.  */
+.page {
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.scroll-page{
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.form {
+  flex-grow: 2;
+  vertical-align: middle;
+  background: skyblue;
+  background-image: linear-gradient(150deg,rgba(255,255,255,0), rgba(255,255,255, .95));
+}
+.logo {
+  height: 90;
+  font-weight: bold;
+  margin-bottom: 60;
+  margin-top: 50;
+}
+.input-field {
+  margin-bottom: 20;
+  background-color: white;
+  border-radius:90px;
+  padding-top: 5;
+  padding-bottom: 5;
+  width: 90%;
+  text-decoration:'none';
+}
+.input {
+  font-size: 18;
+  placeholder-color: rgb(201, 199, 199);
+  font-family: 'serif';
+  padding-left: 15;
+}
+.btn-primary {
+  background-color:rgb(75, 118, 247);
+  color:white;
+  width:90%;
+  padding-top:5;
+  padding-bottom: 5;
+  border-radius:5px;
+  margin-bottom: 40;
+  font-family: 'serif';
+  font-size: 24;
+}
+.login-label {
+  text-align: center;
+  color: black;
+  font-size: 18;
+  font-family: 'serif';
+}
+.auth-buttons{
+  color:black;
+  font-size: 18;
+  margin-left:13%;
+  font-family: 'serif';
+  margin-top: 30;
+  margin-bottom:50;
+}
+.bold {
+  color: skyblue;
+  margin-right: 13%; 
+}
+
+

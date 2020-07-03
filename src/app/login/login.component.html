@@ -1,1 +1,26 @@
-<Button text="login works!" class="btn btn-primary"></Button>
+<FlexboxLayout class="page">
+    <ScrollView orientation="vertical" class="scroll-page">
+        <StackLayout class="form" orientation="vertical">
+            <Image class="logo" src="~/image/logo.png"></Image>
+
+            <PreviousNextView>
+                <GridLayout rows="auto, auto, auto">
+                    <StackLayout row="0" class="input-field">
+                        <TextField class="input" hint="Identifiant"  style="border-color:white" ></TextField>
+                    </StackLayout>
+
+                    <StackLayout row="1" class="input-field">
+                        <TextField class="input"  hint="Mot de passe" style="border-color:white"></TextField>
+                    </StackLayout>
+                </GridLayout>
+            </PreviousNextView>
+       
+            <Button text="Connexion" class="btn-primary"></Button>
+            <Label text="Mot de passe oublié?" class="login-label"></Label>
+            <FlexboxLayout alignItems="center" justifyContent="space-between" class="auth-buttons" textWrap="true">
+                <Label  text="Besoin d'un compte?" ></Label>
+                <Label  text="s'inscrire" class="bold"></Label>
+            </FlexboxLayout>
+        </StackLayout>
+    </ScrollView>
+</FlexboxLayout>

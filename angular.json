@@ -4,6 +4,7 @@
   "newProjectRoot": "projects",
   "cli": {
     "defaultCollection": "@nativescript/schematics"
+
   },
   "projects": {
     "hello-world": {
