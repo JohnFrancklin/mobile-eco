@@ -1,0 +1,98 @@
+.page{
+    background-color: rgb(1,64,107);
+}
+.setting{
+    width: 100px;
+    margin:70px 60px 0px 60px;
+    opacity:0.9;  
+}
+.notif{
+    width: 100px;
+    margin:70px 60px 0px 60px;
+    opacity:0.9;
+}
+.img_profil{
+    height: 360px;
+    border-radius: 200px;
+    padding: 5px;
+    width: 360px;
+    margin-top:65px;
+}
+.profil_name{
+    font-size:16;
+    text-align: center;
+    color:#ffffff;
+    font-family:'serif';
+    padding-top: 40px;
+}
+.country{
+    font-size:14;
+    text-align: center;
+    color:#8997a0;
+    font-family:'serif';
+}
+.number{
+    font-size:14;
+    color:#ffffff;
+    font-family:'serif';
+    margin:70px 170px 0px 150px;
+}
+.txt_like{
+    font-size:14;
+    color:#ffffff;
+    font-family:'serif';
+    margin:0px 120px 0px 120px;
+}
+.body{
+    width:100%;
+    height: 245;
+    margin-top: 55px;
+    background-color: white;
+}
+.champ{
+    border-bottom-width:2px;
+    border-color: #d9d9d9;
+    padding-top:-40px;
+    margin:5px 100px 0px 220px;
+}
+.icon{
+    width: 100px;
+    margin:30px 40px 0px 80px;
+    opacity:0.2;
+}
+.txt_information{
+    font-size:14;
+    font-family: 'serif';
+    color: #919191;
+    margin:40px 350px 0px 0px;  
+    float: left;
+}
+.nb_command{
+    font-size: 14;
+    font-family: 'serif';
+    color: #919191;
+    margin:40px 0px 0px 0px;
+}
+.chevron{
+    width: 100px;
+    margin:10px 60px 0px 30px;
+    opacity:0.2;
+}
+
+.nb_number{
+    font-size:14;
+    font-family: 'serif';
+    color: #919191;
+    margin:40px 0px 0px 80px;
+}
+.nb_history{
+    font-size:14;
+    font-family: 'serif';
+    color: #919191;
+    margin:40px 0px 0px 0px;
+}
+
+
+
+
+
