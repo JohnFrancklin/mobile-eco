@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page/page';
-import { TNSFontIconService } from 'nativescript-ng2-fonticon';
 
 @Component({
   selector: 'ns-user',
@@ -9,8 +8,7 @@ import { TNSFontIconService } from 'nativescript-ng2-fonticon';
 })
 export class UserComponent implements OnInit {
 
-  constructor(private page: Page,
-    private fonticon: TNSFontIconService) {  }
+  constructor(private page: Page) {  }
 
 
   ngOnInit(): void {

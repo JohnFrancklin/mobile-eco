@@ -1,22 +1,21 @@
-.page{
+
+.header{
     background-color: rgb(1,64,107);
+    padding:30px;
+    margin-bottom:30px ;
 }
-.setting{
-    width: 100px;
-    margin:70px 60px 0px 60px;
-    opacity:0.9;  
-}
-.notif{
-    width: 100px;
-    margin:70px 60px 0px 60px;
-    opacity:0.9;
+.icon_top{
+    width: 96px;
+    opacity: 1.2;
+    padding-bottom: 30px;
 }
 .img_profil{
     height: 360px;
     border-radius: 200px;
-    padding: 5px;
     width: 360px;
     margin-top:65px;
+    border-width: 10px;
+    border-color: white;
 }
 .profil_name{
     font-size:16;
@@ -31,66 +30,71 @@
     color:#8997a0;
     font-family:'serif';
 }
-.number{
+.number1{
     font-size:14;
-    color:#ffffff;
-    font-family:'serif';
-    margin:70px 170px 0px 150px;
+    font-family: 'serif';
+    color: #ffffff;
+    margin:40px 50px 0px 80px;  
 }
-.txt_like{
+.number2{
     font-size:14;
-    color:#ffffff;
-    font-family:'serif';
-    margin:0px 120px 0px 120px;
+    font-family: 'serif';
+    color: #ffffff;
+    margin:40px 100px 0px 50px;  
+}
+.txt_reaction1{
+    font-size:14;
+    font-family: 'serif';
+    color: #ffffff;
+    margin:0px 90px 0px 50px; 
+}
+.txt_reaction2{
+    font-size:14;
+    font-family: 'serif';
+    color: #ffffff;
+    margin:0px 50px 0px 50px; 
 }
 .body{
     width:100%;
-    height: 245;
-    margin-top: 55px;
-    background-color: white;
+    height: 270;
 }
-.champ{
-    border-bottom-width:2px;
-    border-color: #d9d9d9;
-    padding-top:-40px;
-    margin:5px 100px 0px 220px;
+.input_icon{
+    margin-top: 30px;
+   
+}
+.input_details{
+    margin-top: -120px;
 }
 .icon{
-    width: 100px;
-    margin:30px 40px 0px 80px;
-    opacity:0.2;
+    width: 96px;
+    margin:0px 40px 00px 40px;
+    opacity:0.3;
 }
-.txt_information{
+.txt_details{
     font-size:14;
     font-family: 'serif';
-    color: #919191;
-    margin:40px 350px 0px 0px;  
-    float: left;
+    color: #777777;
+    margin:40px 350px 0px 170px;  
 }
-.nb_command{
+.nb_details{
     font-size: 14;
     font-family: 'serif';
-    color: #919191;
-    margin:40px 0px 0px 0px;
+    color: #777777;
+    margin:40px 160px 0px 0px;
 }
 .chevron{
-    width: 100px;
-    margin:10px 60px 0px 30px;
-    opacity:0.2;
+    width: 96px;
+    margin:10px 40px 0px 90px;
+    opacity:0.3;
+}
+.border{
+    border-bottom-width:2px;
+    border-color: #d9d9d9;
+    padding-top:-20px;
+    margin:5px 60px 0px 170px;
 }
 
-.nb_number{
-    font-size:14;
-    font-family: 'serif';
-    color: #919191;
-    margin:40px 0px 0px 80px;
-}
-.nb_history{
-    font-size:14;
-    font-family: 'serif';
-    color: #919191;
-    margin:40px 0px 0px 0px;
-}
+
 
 
 
