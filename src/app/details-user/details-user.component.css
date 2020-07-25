@@ -1,0 +1,127 @@
+.head{
+    background:linear-gradient(180deg,#0061ad 30%,#ffffff);
+    padding:30px;
+    margin-bottom:200px;
+}
+.icon_chevronleft{
+    width: 96px;
+    horizontal-align:left;
+    margin-left: -30px;
+}
+.icon_search{
+    width: 96px;
+    horizontal-align:right;
+    margin-right: 80px;
+}
+.icon_more{
+    width: 96px;
+    horizontal-align:right;
+    margin-right: -30px;
+}
+.img_profil{
+    height: 360px;
+    width: 360px;
+    border-radius:200px;
+    border-width: 15px;
+    border-color: white;
+    horizontal-align: left;
+    margin: 100px 0px 0px 40px;
+}
+.profil_name{
+    font-size:18;
+    color:#ffffff;
+    font-family:'serif';
+    margin: 220px 0px 0px 470px;
+}
+.profil_job{
+    font-size:14;
+    color:#070707;
+    font-family:'serif'; 
+    margin: 330px 0px 0px 480px;
+}
+.group{
+    font-size:14;
+    color:#c0c0c0;
+    font-family:'serif';
+    margin: 380px 0px 0px 540px;
+}
+.btn_follow{
+    color: #00eac4;
+    border-width: 5px;
+    border-radius: 150px;
+    border-color: #00eac4;
+    font-family: 'serif';
+    font-size: 18;
+    width: 400px;  
+    height: 100px; 
+    text-align: center;
+    margin: 50px 450px 0px 0px;
+}
+.btn_contact{
+    color: #424242;
+    border-width: 5px;
+    border-radius: 150px;
+    border-color: #424242;
+    font-family: 'serif';
+    font-size: 18;
+    width: 400px;
+    height: 100px;
+    margin: 50px 0px 0px 540px; 
+    
+}
+.txt_photos{
+    font-size: 18;
+    font-family: 'serif';
+    margin: 60px 0px 20px 20px;
+}
+.calendar{
+    font-size:16;
+    font-family: 'serif';
+    margin: 400px 0px 30px 0px;
+    color: #ffffff;
+    text-align: center;
+}
+.img_calendar{
+   border-radius: 30px;
+   width: 350px;
+   height: 520px;
+   margin-left: 10px;
+}
+.month_february{
+    background-color: #0061ad;
+    width: 350px;
+    height: 520px;
+    border-radius: 30px;
+    margin-left: 40px;
+}
+.month_march{
+    background-color: #0061ad;
+    width: 350px;
+    height: 520px;
+    border-radius: 30px;
+    margin-left: 40px;
+}
+.month_april{
+    background-color: #0061ad;
+    width: 350px;
+    height: 520px;
+    border-radius: 30px;
+    margin-left: 40px;
+}
+.month_may{
+    background-color: #0061ad;
+    width: 350px;
+    height: 520px;
+    border-radius: 30px;
+    margin-left: 40px;
+}
+.month_june{
+    background-color: #0061ad;
+    width: 350px;
+    height: 520px;
+    border-radius: 30px;
+    margin-left: 40px;
+}
+
+
+
