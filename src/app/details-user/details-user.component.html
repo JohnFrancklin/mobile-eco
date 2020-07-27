@@ -16,29 +16,29 @@
 
                         <GridLayout>
                                 <Button text="Suivre" class="btn_follow"></Button>
-                                <Button text="Contact" class="btn_contact"></Button>
+                                <Button text="Contact" class="btn_contact"></Button >
                         </GridLayout>
 
                         <Label text="Photos" class="txt_photos"></Label>
                         <ScrollView orientation="horizontal">
-                                <StackLayout orientation="horizontal">
-                                        <GridLayout class="month_january" >
-                                                <Image class="img_calendar" src="~/image/image1.jpg"></Image>
-                                                <Label class="calendar" text="Janvier 2020"></Label>
+                                <StackLayout class="details" orientation="horizontal">
+                                        <GridLayout class="month_january" [shadow]="fabShadow">
+                                                <Image class="img_calendar" src="~/image/image1.jpg"></Image >
+                                                <Label  class="calendar" text="Janvier 2020"></Label>
                                         </GridLayout>
-                                        <GridLayout class="month_february">
+                                        <GridLayout class="month_february" [shadow]="Shadow">
                                                 <Label class="calendar" text="Février 2020"></Label>
                                         </GridLayout>
-                                        <GridLayout class="month_march">
+                                        <GridLayout class="month_march" [shadow]="Shadow">
                                                 <Label class="calendar" text="Mars"></Label>
                                         </GridLayout>
-                                        <GridLayout class="month_april">
+                                        <GridLayout class="month_april" [shadow]="Shadow">
                                                 <Label class="calendar"></Label >
                                         </GridLayout>
-                                        <GridLayout class="month_may">
+                                        <GridLayout class="month_may" [shadow]="Shadow">
                                                 <Label class="calendar"></Label>
                                         </GridLayout>
-                                        <GridLayout class="month_june">
+                                        <GridLayout class="month_june" [shadow]="Shadow">
                                                 <Label class="calendar"></Label>
                                         </GridLayout>
                                 </StackLayout>
