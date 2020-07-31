@@ -7,7 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
 import { TNSFontIconModule } from 'nativescript-ng2-fonticon';
 import { DetailsUserComponent } from './details-user/details-user.component';
-import {NgShadowModule} from "nativescript-ng-shadow";
+// import {NgShadowModule} from "nativescript-ng-shadow";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -20,7 +20,7 @@ import {NgShadowModule} from "nativescript-ng-shadow";
         AppComponent
     ],
     imports: [
-        NgShadowModule,
+        // NgShadowModule,
         NativeScriptModule,
         AppRoutingModule,
         TNSFontIconModule.forRoot({
