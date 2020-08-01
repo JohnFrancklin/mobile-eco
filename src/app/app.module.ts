@@ -8,6 +8,7 @@ import { UserComponent } from './user/user.component';
 import { TNSFontIconModule } from 'nativescript-ng2-fonticon';
 import { DetailsUserComponent } from './details-user/details-user.component';
 import {NgShadowModule} from "nativescript-ng-shadow";
+import { ProductPageComponent } from './product-page/product-page.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -33,6 +34,7 @@ import {NgShadowModule} from "nativescript-ng-shadow";
         RegisterComponent,
         UserComponent,
         DetailsUserComponent,
+        ProductPageComponent,
     ],
     providers: [],
     schemas: [

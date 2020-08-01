@@ -1,0 +1,130 @@
+.head{
+    background-color: #e4e4e4;
+}
+.menu{
+    width: 96px;
+    margin-right: 85%;
+    margin-bottom: 90%;
+}
+.panier{
+    width: 96px;
+    margin-bottom: 90%;
+    margin-left: 85%;
+}
+
+.input-field{
+    background-color: white;
+    border-radius:30%;
+    height:8%;
+    margin-bottom: 75%;
+}
+.input{
+    font-size:18;
+    font-family: 'serif';
+    placeholder-color:#a1a1a1;
+    padding-left: 20;
+}
+.produit_one{
+    background-color:white;
+    height: 35%;
+    width: 45%;
+    border-radius: 10%;
+    margin-right: 50%;
+    margin-bottom: 25%;
+}
+.img1{
+   border-radius: 20%;
+   height: 100%;
+   width: 100%;
+   margin-bottom: 90%;
+}
+.text{
+    font-size: 14;
+    font-family: 'serif';
+    color:#a1a1a1;
+    margin-top: 56%;
+    text-align: center;
+}
+.grade{
+    background-color:#003a88;
+    border-radius: 5%;
+    width: 30%;
+    height: 13%;
+    margin-right:65%;
+    margin-top:55%;
+}
+.number{
+    font-size: 16;
+    font-family: 'serif';
+    color: white;
+    margin-left: 15%;
+    margin-bottom: 20%;
+}
+.icon{
+   margin-left: 25%;
+   width: 40%;
+}
+.money{
+    font-size: 18;
+    font-family: 'serif';
+    color: #ff1818;
+    margin-left: 55%;
+    margin-top: 70%;
+}
+.icon_grade{
+    width: 15%;
+    margin-right: 70%;
+    margin-top:85%
+}
+.icon_favorite{
+    width: 15%;
+    margin-right: 3%;
+    margin-top:85%
+}
+.icon_panier{
+    width: 15%;
+    margin-left: 75%;
+    margin-top:85%
+}
+.produit_two{
+    background-color:white;
+    height: 35%;
+    width: 45%;
+    border-radius: 10%;
+    margin-left: 50%;
+    margin-bottom: 25%; 
+}
+.produit_three{
+    background-color: white;
+    height: 35%;
+    width: 45%;
+    border-radius: 10%;
+    margin-right: 50%;
+    margin-top: 50%;
+}
+.produit_four{
+    background-color: white;
+    height: 35%;
+    width: 45%;
+    border-radius: 10%;
+    margin-left: 50%;
+    margin-top: 50%;
+}
+.produit_five{
+    background-color: white;
+    height: 35%;
+    width: 45%;
+    border-radius: 10%;
+    margin-right: 50%;
+    margin-top: 125%;
+}
+.produit_six{
+    background-color: white;
+    height: 35%;
+    width: 45%;
+    border-radius: 10%;
+    margin-left: 50%;
+    margin-top: 125%;
+}
+
+
