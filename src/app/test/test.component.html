@@ -1,0 +1,33 @@
+<template>
+<RadListView
+    for="recipe in recipes"
+    layout="grid"
+    itemHeight="200"
+   >
+   <v-template>
+      <GridLayout tkExampleTitle tkToggleNavButton >
+          <RadListView [items]="produit" marginRight="-2" (itemLoading)="onItemLoading($event)">
+              <ListViewStaggeredLayout tkListviewLayout scrollDirection="Vertical" itemHeight="200" spanCount="2">
+              </ListViewStaggeredLayout>
+              <ng-template tkListItemTemplate let-item="item">
+                     
+                      <StackLayout margin="15" borderRadius="10">
+                          <Image src="{{item.imagesrc}}"  width="200" height="120" stretch="aspectFill"></Image>
+                          <Label class="text" text="{{item.text}}"></Label>
+                          <StackLayout backgroundColor="white" class="border">
+                              <Label class="number" text="{{item.number}}"></Label>
+                              <Image class="icon" src="~/image/grade2.png"></Image>
+                          </StackLayout>
+                          <Label class="price" text="{{item.price}}"></Label>
+                         
+                              <Image class="icon_grade" src="~/image/grade.png"></Image>
+                              <Image class="icon_favorite" src="~/image/favorite.png"></Image>
+                              <Image class="icon_grocery" src="~/image/grocery.png"></Image>
+                        
+                      </StackLayout>
+              </ng-template>
+          </RadListView>
+      </GridLayout>
+      </v-template>
+</RadListView>
+</template>

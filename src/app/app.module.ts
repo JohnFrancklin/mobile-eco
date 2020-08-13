@@ -5,10 +5,11 @@ import { AppComponent } from "./app.component";
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
-import { TNSFontIconModule } from 'nativescript-ng2-fonticon';
+
 import { DetailsUserComponent } from './details-user/details-user.component';
-import {NgShadowModule} from "nativescript-ng-shadow";
-import { ProductPageComponent } from './product-page/product-page.component';
+import { ProduitComponent } from './produit/produit.component';
+import { TestComponent } from './test/test.component';
+// import {NgShadowModule} from "nativescript-ng-shadow";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -21,12 +22,9 @@ import { ProductPageComponent } from './product-page/product-page.component';
         AppComponent
     ],
     imports: [
-        NgShadowModule,
+        // NgShadowModule,
         NativeScriptModule,
         AppRoutingModule,
-        TNSFontIconModule.forRoot({
-            'mdi': 'material-design-icons.css'
-        })
     ],
     declarations: [
         AppComponent,
@@ -34,7 +32,8 @@ import { ProductPageComponent } from './product-page/product-page.component';
         RegisterComponent,
         UserComponent,
         DetailsUserComponent,
-        ProductPageComponent,
+        ProduitComponent,
+        TestComponent,
     ],
     providers: [],
     schemas: [

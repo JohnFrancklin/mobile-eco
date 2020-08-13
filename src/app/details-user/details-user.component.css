@@ -100,27 +100,36 @@
     width: 350px;
     height: 520px;
     margin-left: 40px;
+    background-color: #0061ad;
 }
 .month_march{
     width: 350px;
     height: 520px;
     margin-left: 40px;
+    background-color: #0061ad;
 }
 .month_april{
     width: 350px;
     height: 520px;
     margin-left: 40px;
+    background-color: #0061ad;
 }
 .month_may{
     width: 350px;
     height: 520px;
     margin-left: 40px;
+    background-color: #0061ad;
 }
 .month_june{
     width: 350px;
     height: 520px;
     margin-left: 40px;
+    background-color: #0061ad;
 }
 
 
 
+/* .cardStyle {
+    background-color: #3489db;
+    color: #fff;
+  } */

@@ -1,0 +1,88 @@
+.head{
+    background-color: #e4e4e4;
+    padding: 50px;
+}
+.icon_menu{
+    width: 96px;
+    horizontal-align: left;
+}
+.icon_hamper{
+    width: 96px;
+    horizontal-align: right;
+}
+.input{
+    font-size:16;
+    font-family: 'serif';
+    placeholder-color:#afafaf;
+    padding-left: 20;
+    font-weight: bold;
+}
+.input-search{
+    background-color: white;
+    border-radius:80px;
+    height:150px;
+    width:100%;
+}
+.cardStyle1{
+    background-color: #fff;
+    width: 48%;
+    margin-top: 50px; 
+    horizontal-align: left;
+}
+.all_inf_prod{
+    padding:20px;
+}
+.cardStyle2{
+    background-color: #fff;
+    width: 48%;
+    margin-top: 50px;
+    horizontal-align: right;
+}
+.text{
+    font-size: 14;
+    font-family: 'serif';
+    color:#a1a1a1
+}
+.border{
+    background-color:#003a88;
+    border-radius: 10px;
+    width: 130px;
+    height: 70px;
+    horizontal-align: left;
+    margin-top: 20px;
+}
+.number{
+    font-size: 16;
+    font-family: 'serif';
+    color: white;
+    margin-left: 20px;
+}
+.grade{
+    margin-left: 60px;
+    width: 50px;
+ }
+.price{
+    font-size: 16;
+    font-family: 'serif';
+    color: #ff1818;
+    
+    margin-top: -70px;
+    horizontal-align: right;
+}
+.icon{
+    margin-top:10;
+}
+.icon_grade{
+    width: 60px;
+    horizontal-align: left;
+}
+.icon_favorite{
+    width: 60px;
+    margin-left: 10px; 
+}
+.icon_grocery{
+    width: 60px;
+    horizontal-align: right;
+}
+
+
