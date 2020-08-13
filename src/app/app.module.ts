@@ -8,7 +8,6 @@ import { UserComponent } from './user/user.component';
 
 import { DetailsUserComponent } from './details-user/details-user.component';
 import { ProduitComponent } from './produit/produit.component';
-import { TestComponent } from './test/test.component';
 // import {NgShadowModule} from "nativescript-ng-shadow";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
@@ -33,7 +32,6 @@ import { TestComponent } from './test/test.component';
         UserComponent,
         DetailsUserComponent,
         ProduitComponent,
-        TestComponent,
     ],
     providers: [],
     schemas: [
