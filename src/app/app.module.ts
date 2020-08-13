@@ -7,13 +7,16 @@ import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
 import { TNSFontIconModule } from 'nativescript-ng2-fonticon';
 import { DetailsUserComponent } from './details-user/details-user.component';
+import { TestComponent } from './test/test.component';
+// import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
+import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
+// import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
 // import {NgShadowModule} from "nativescript-ng-shadow";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
-
 // Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
-// import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
+import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 
 @NgModule({
     bootstrap: [
@@ -23,9 +26,11 @@ import { DetailsUserComponent } from './details-user/details-user.component';
         // NgShadowModule,
         NativeScriptModule,
         AppRoutingModule,
+        // NativeScriptUIListViewModule,
         TNSFontIconModule.forRoot({
             'mdi': 'material-design-icons.css'
         })
+        
     ],
     declarations: [
         AppComponent,
@@ -33,6 +38,7 @@ import { DetailsUserComponent } from './details-user/details-user.component';
         RegisterComponent,
         UserComponent,
         DetailsUserComponent,
+        TestComponent,
     ],
     providers: [],
     schemas: [
