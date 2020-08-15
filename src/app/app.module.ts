@@ -5,12 +5,14 @@ import { AppComponent } from "./app.component";
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
-import { TNSFontIconModule } from 'nativescript-ng2-fonticon';
+
 import { DetailsUserComponent } from './details-user/details-user.component';
 import { TestComponent } from './test/test.component';
 // import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
 import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
 // import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
+import { ProduitComponent } from './produit/produit.component';
+
 // import {NgShadowModule} from "nativescript-ng-shadow";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
@@ -26,11 +28,6 @@ import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
         // NgShadowModule,
         NativeScriptModule,
         AppRoutingModule,
-        // NativeScriptUIListViewModule,
-        TNSFontIconModule.forRoot({
-            'mdi': 'material-design-icons.css'
-        })
-        
     ],
     declarations: [
         AppComponent,
@@ -38,6 +35,7 @@ import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
         RegisterComponent,
         UserComponent,
         DetailsUserComponent,
+        ProduitComponent,
         TestComponent,
     ],
     providers: [],

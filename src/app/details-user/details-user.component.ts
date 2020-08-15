@@ -10,8 +10,6 @@ registerElement('CardView', () => CardView);
   styleUrls: ['./details-user.component.css']
 })
 export class DetailsUserComponent implements OnInit {
-  
-  
   constructor(private page: Page) { }
 
   ngOnInit(): void {
