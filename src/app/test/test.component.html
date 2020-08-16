@@ -1,8 +1,9 @@
-<Page>
-    <FlexboxLayout width="300" height="300" backgroundColor="lightgray">
-      <Label text="Label 1" width="70" height="70" backgroundColor="red"></Label>
-      <Label text="Label 2" width="70" height="70" backgroundColor="green"></Label>
-      <Label text="Label 3" width="70" height="70" backgroundColor="blue"></Label>
-      <Label text="Label 4" width="70" height="70" backgroundColor="yellow"></Label>
-    </FlexboxLayout>
-  </Page>
+<GridLayout>
+  <WrapLayout orientation="horizontal">
+      <StackLayout class="contenu" *ngFor="let t of tab; let i = index">
+        <Label [text]="t.title" ></Label>
+        <Label text="&#xf004;" class="fas" [ngClass]="{fas: t.favorite == true, far: t.favorite == false }" style="font-size: 20%;" #icon  (tap)="addOrRemoveFavorite(t.id, i)"></Label>
+      </StackLayout>
+  </WrapLayout>
+</GridLayout>
+

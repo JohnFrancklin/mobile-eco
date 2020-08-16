@@ -36,7 +36,7 @@ import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
         UserComponent,
         DetailsUserComponent,
         ProduitComponent,
-        TestComponent,
+        TestComponent
     ],
     providers: [],
     schemas: [
