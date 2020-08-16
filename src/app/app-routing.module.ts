@@ -8,7 +8,7 @@ import { ProduitComponent } from "./produit/produit.component";
 import { TestComponent } from "./test/test.component";
 
 const routes: Routes = [
-    { path: "", redirectTo: "/test", pathMatch: "full" },
+    { path: "", redirectTo: "/produit", pathMatch: "full" },
     { path: "login", component: LoginComponent },
     { path: "user", component: UserComponent},
     { path: "detailsUser" , component: DetailsUserComponent},
