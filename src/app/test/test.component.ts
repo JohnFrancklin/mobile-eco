@@ -1,6 +1,7 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import * as utils from "util/util";
-// import RecipeCard from "../components/RecipeCard";
+import { Component, OnInit, ViewChild, ElementRef, ɵisListLikeIterable } from '@angular/core';
+import { Page } from 'tns-core-modules/ui/page/page';
+
+
 // import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
 
 @Component({
@@ -16,7 +17,7 @@ export class TestComponent implements OnInit {
     {
       id: 1,
       title: "Cahier",
-      favorite: true
+      favorite: false
     },
     {
       id: 2,
@@ -40,7 +41,10 @@ export class TestComponent implements OnInit {
     }
   ]
 
-  constructor() { }
+
+  constructor(private page: Page) { 
+    // this.page.actionBarHidden = true;
+  }
 
   ngOnInit(): void {
   }
@@ -49,11 +53,15 @@ export class TestComponent implements OnInit {
 
     if (this.tab[i].favorite == true) {
       this.tab[i].favorite = false;
+
     } else {
       this.tab[i].favorite = true;
     }
 
-    // this.animate();
+    // this.view.nativeElement.style.color = "pink";
+
+
+
   }
 
 
@@ -66,6 +74,15 @@ export class TestComponent implements OnInit {
 
   }
 
+
+
+  getElemBg(args) { 
+    const view = require("tns-core-modules/ui/core/view"); 
+    // let button = args.object; 
+    // let parent = button.parent; 
+    let fstr = view.getViewById("rakoto"); 
+    fstr.backgroundColor = "green"; 
+  }
 
 
 }

@@ -2,7 +2,7 @@
   <WrapLayout orientation="horizontal">
       <StackLayout class="contenu" *ngFor="let t of tab; let i = index">
         <Label [text]="t.title" ></Label>
-        <Label text="&#xf004;" class="fas" [ngClass]="{fas: t.favorite == true, far: t.favorite == false }" style="font-size: 20%;" #icon  (tap)="addOrRemoveFavorite(t.id, i)"></Label>
+        <Label text="&#xf004;" class="autreClasse" [ngClass]="{'fas autreClasse1': t.favorite == true, 'far autreClasse2': t.favorite == false }" style="font-size: 20%;" #icon  id="rakoto" (tap)="addOrRemoveFavorite(t.id, i)"></Label>
       </StackLayout>
   </WrapLayout>
 </GridLayout>

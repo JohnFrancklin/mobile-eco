@@ -3,3 +3,64 @@
     width: 48%;
     margin: 1%;
 }
+
+@keyframes autreClasse1{
+    from {
+        transform: scale(1,1) rotate(-120);
+        opacity: 0;
+        animation-timing-function: linear;
+    }
+    50% {
+        transform: scale(2,2) rotate(-60);
+        opacity: 0.3;
+        animation-timing-function: ease-in;
+    }
+    to {
+        transform: scale(1,1) rotate(0);
+        opacity: 1;
+    }
+}
+
+.autreClasse{
+    horizontal-align: left;
+    margin-left: 10em;
+    /* width: 50em; */
+    padding: 5em;
+}
+
+
+.autreClasse1{
+    animation-name: autreClasse1;
+    animation-duration: 0.4;
+    /* vertical-align: center; */
+    horizontal-align: left;
+    margin-left: 10em;
+    
+}
+
+@keyframes autreClasse2{
+    from {
+        transform: scale(1,1) rotate(120);
+        opacity: 0;
+        animation-timing-function: linear;
+    }
+    60% {
+        transform: scale(2,2) rotate(60);
+        opacity: 0.3;
+        animation-timing-function: ease-in;
+    }
+    to {
+        transform: scale(1,1) rotate(0);
+        opacity: 1;
+    }
+}
+
+.autreClasse2{
+    animation-name: autreClasse2;
+    animation-duration: 0;
+    /* vertical-align: center; */
+    horizontal-align: left;
+    margin-left: 10em;
+
+    
+}
