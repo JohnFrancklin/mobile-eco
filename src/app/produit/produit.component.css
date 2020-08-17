@@ -16,6 +16,7 @@
     placeholder-color:#afafaf;
     padding-left: 60px;
 }
+
 .input-search{
     background-color: white;
     border-radius:80px;
@@ -24,20 +25,8 @@
     padding: 10px 0px 10px 0px;
     margin-top: 50px;
 }
-.cardStyle1{
-    background-color: #fff;
-    width: 48%;
-    margin-top: 50px; 
-    horizontal-align: left;
-}
 .all_inf_prod{
     padding:20px;
-}
-.cardStyle2{
-    background-color: #fff;
-    width: 48%;
-    margin-top: 50px;
-    horizontal-align: right;
 }
 .text{
     font-size: 14;
@@ -102,41 +91,13 @@
 .contenu{
     background-color:#ffffff;
     width: 48%;
-    margin: 1%;
+    margin-top:50px;
+    margin-left: 1%;
+    margin-right:1% ;
+    border-radius: 10%;
 }
-.autreClasse{
-    horizontal-align: left;
-    margin-left: 10em;
-    /* width: 50em; */
-    padding: 5em;
+.image{
+    border-radius: 10% 10% 0% 0%;
 }
-.autreClass1{
-    horizontal-align: left;
-    margin-left: 20em;
-    /* width: 50em; */
-    padding: 5em;
-}
+ 
 
-@keyframes autreClasse1{
-    from {
-        transform: scale(1,1) rotate(-120);
-        opacity: 0;
-        animation-timing-function: linear;
-    }
-    50% {
-        transform: scale(2,2) rotate(-60);
-        opacity: 0.3;
-        animation-timing-function: ease-in;
-    }
-    to {
-        transform: scale(1,1) rotate(0);
-        opacity: 1;
-    }
-}
-
-.autreClasse2{
-    horizontal-align: left;
-    margin-left: 40em;
-    /* width: 50em; */
-    padding: 5em;
-}
