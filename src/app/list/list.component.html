@@ -1,0 +1,6 @@
+<StackLayout class="head">
+    <Label text="Identification" class="text"></Label>
+    <TextField class="input input-name"  hint="Nom" [(ngModel)]="nom"></TextField>
+    <TextField class="input input-lastname" hint="Prenom" [(ngModel)]="prenom"></TextField>
+    <Button text="Entrer" class="btn" (tap)="entrez(nom,prenom)"></Button>
+</StackLayout>
