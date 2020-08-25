@@ -19,6 +19,8 @@ import { ProduitComponent } from './produit/produit.component';
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
 // Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
 import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
+import { NativeScriptFormsModule } from "nativescript-angular/forms";
+import { TestSoundComponent } from './test-sound/test-sound.component';
 
 @NgModule({
     bootstrap: [
@@ -28,6 +30,7 @@ import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
         // NgShadowModule,
         NativeScriptModule,
         AppRoutingModule,
+        NativeScriptFormsModule
     ],
     declarations: [
         AppComponent,
@@ -36,7 +39,8 @@ import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
         UserComponent,
         DetailsUserComponent,
         ProduitComponent,
-        TestComponent
+        TestComponent,
+        TestSoundComponent
     ],
     providers: [],
     schemas: [

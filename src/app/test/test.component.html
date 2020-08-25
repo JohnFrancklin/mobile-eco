@@ -1,9 +1,32 @@
 <GridLayout>
   <WrapLayout orientation="horizontal">
-      <StackLayout class="contenu" *ngFor="let t of tab; let i = index">
-        <Label [text]="t.title" ></Label>
-        <Label text="&#xf004;" class="autreClasse" [ngClass]="{'fas autreClasse1': t.favorite == true, 'far autreClasse2': t.favorite == false }" style="font-size: 20%;" #icon  id="rakoto" (tap)="addOrRemoveFavorite(t.id, i)"></Label>
-      </StackLayout>
+    <StackLayout class="contenu" *ngFor="let t of tab; let i = index">
+      <Label [text]="t.title"></Label>
+      <Label text="&#xf004;" class="autreClasse"
+        [ngClass]="{'fas autreClasse1': t.favorite == true, 'far autreClasse2': t.favorite == false }"
+        style="font-size: 20%;" #icon id="rakoto" (tap)="addOrRemoveFavorite(t.id, i)"></Label>
+    </StackLayout>
   </WrapLayout>
 </GridLayout>
 
+<!-- <StackLayout>
+  <Button text="createFile" (tap)="createFile()"></Button>
+  <Button text="checkfile" (tap)="checkIfFilesExist()"></Button>
+  <Button text="readFile" (tap)="readFile()"></Button>
+</StackLayout> -->
+
+
+
+
+<!-- <Button text="event" (tap)="event()"></Button>
+
+<GridLayout rows="" columns="">
+  <StackLayout>
+
+    <TextField hint="" text="" [(ngModel)]="prenom"></TextField> <br>
+    <TextField hint="" text="" [(ngModel)]="age"></TextField>
+    <Button text="creer" (tap)="creer(prenom,age)"></Button>
+
+
+  </StackLayout>
+</GridLayout> -->
