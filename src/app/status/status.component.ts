@@ -8,25 +8,20 @@ import { Page } from 'tns-core-modules/ui/page/page';
 })
 
 export class StatusComponent implements OnInit {
-
+  tab = [];
+  
   constructor(private page: Page, ) { }
-  creer(prenom) {
-    alert("prenom" + prenom);
-  }
 
-  supprimer() {
-    const prenom = ["Lita", "Bema", "Luc", "Lucie", "Billy"];
-    prenom.splice(1, 3)
-    alert("prenom" + prenom)
+  creer(couleur){
+   this.tab.push(couleur);
+  }
+  supprimer(i){
+    this.tab.splice(i,1);
   }
   ngOnInit(): void {
     this.page.actionBarHidden = true;
   }
 }
-
-/*const prenom = ["Lita", "Bema", "Luc","Lucie"];
-for(let i=0; i<prenom.length;i++)
-console.log(prenom[i])*/
 
 
 

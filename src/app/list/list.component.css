@@ -1,37 +1,4 @@
 .head{
-    background-color: white;
+    background-color: skyblue;
     padding: 20px;
 }
-.text{
-    font-family: 'serif';
-    margin: 10%;
-    text-align: center;
-    font-size: 30;
-    font-weight: bold;
-}
-.input{
-    border-radius: 20px;
-    background-color: rgb(185, 182, 182);
-    height: 150px;
-   
-}
-.input-name{
-    font-family: 'serif';
-    font-size: 16;
-    padding-left: 20px;
-    placeholder-color:#ffffff;
-}
-.input-lastname{
-    font-family: 'serif';
-    font-size: 16;
-    padding-left: 20px;
-    placeholder-color:#ffffff;
-}
-.btn{
-    background-color: crimson;
-    width: 50%;
-    margin-top: 30px;
-    font-family: 'serif';
-    color: white;
-}
-
