@@ -16,7 +16,7 @@ creer(monPrenom,monAge){
     age : monAge
   };
  // alert(personne);
-  this.tab.push(personne.prenom + personne.age)
+  this.tab.push(personne)
 }
 supprimer(i){
   this.tab.splice(i,1);
