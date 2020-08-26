@@ -7,7 +7,6 @@ import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
 
 import { DetailsUserComponent } from './details-user/details-user.component';
-import { TestComponent } from './test/test.component';
 // import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
 import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
 // import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
@@ -19,8 +18,12 @@ import { ProduitComponent } from './produit/produit.component';
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
 // Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
 import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
-import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { TestSoundComponent } from './test-sound/test-sound.component';
+import { TestComponent } from './test/test.component';
+import { StatusComponent } from './status/status.component';
+import { ListComponent } from './list/list.component';
+import { NativeScriptFormsModule } from "nativescript-angular/forms";
+
 
 @NgModule({
     bootstrap: [
@@ -40,7 +43,9 @@ import { TestSoundComponent } from './test-sound/test-sound.component';
         DetailsUserComponent,
         ProduitComponent,
         TestComponent,
-        TestSoundComponent
+        TestSoundComponent,
+        StatusComponent,
+        ListComponent,
     ],
     providers: [],
     schemas: [
