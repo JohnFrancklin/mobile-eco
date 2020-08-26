@@ -7,8 +7,8 @@ import { DetailsUserComponent } from "./details-user/details-user.component";
 import { ProduitComponent } from "./produit/produit.component";
 import { TestComponent } from "./test/test.component";
 import { TestSoundComponent } from "./test-sound/test-sound.component";
-import { StatusComponent } from "./status/status.component";
-import { ListComponent } from "./list/list.component";
+// import { StatusComponent } from "./status/status.component";
+// import { ListComponent } from "./list/list.component";
 
 
 
@@ -20,8 +20,8 @@ const routes: Routes = [
     { path: "produit" , component: ProduitComponent},
     { path: "test" , component: TestComponent},
     { path: "testSound" , component: TestSoundComponent},
-    { path: "status" , component: StatusComponent},
-    { path: "list" , component: ListComponent},
+    // { path: "status" , component: StatusComponent},
+    // { path: "list" , component: ListComponent},
 ];
 
 @NgModule({

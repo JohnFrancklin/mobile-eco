@@ -20,8 +20,8 @@ import { ProduitComponent } from './produit/produit.component';
 import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 import { TestSoundComponent } from './test-sound/test-sound.component';
 import { TestComponent } from './test/test.component';
-import { StatusComponent } from './status/status.component';
-import { ListComponent } from './list/list.component';
+// import { StatusComponent } from './status/status.component';
+// import { ListComponent } from './list/list.component';
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 
@@ -44,8 +44,8 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
         ProduitComponent,
         TestComponent,
         TestSoundComponent,
-        StatusComponent,
-        ListComponent,
+        // StatusComponent,
+        // ListComponent,
     ],
     providers: [],
     schemas: [
