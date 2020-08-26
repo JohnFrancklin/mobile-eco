@@ -12,7 +12,7 @@ import { ListComponent } from "./list/list.component";
 
 
 const routes: Routes = [
-    { path: "", redirectTo: "/status", pathMatch: "full" },
+    { path: "", redirectTo: "/list", pathMatch: "full" },
     { path: "login", component: LoginComponent },
     { path: "user", component: UserComponent},
     { path: "detailsUser" , component: DetailsUserComponent},
