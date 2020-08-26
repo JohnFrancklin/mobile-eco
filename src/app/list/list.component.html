@@ -1,0 +1,13 @@
+<StackLayout class="head">
+        <TextField hint="Entrer le prenom" [(ngModel)]="monPrenom" ></TextField>
+        <TextField hint="Entrer l'age" [(ngModel)]="monAge"></TextField>
+        <Button text="Creer" (tap)="creer(monPrenom,monAge)"></Button >
+        <GridLayout>
+                <StackLayout>
+                    <StackLayout *ngFor="let t of tab; let i = index">
+                        <Label [text]="t" textWrap="true"></Label>
+                        <Button text="Supprimer" (tap)="supprimer(i)" style="width:30%;"></Button>
+                    </StackLayout >
+                </StackLayout>
+            </GridLayout>
+</StackLayout>

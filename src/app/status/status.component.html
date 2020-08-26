@@ -1,0 +1,13 @@
+<StackLayout class="head">
+    <TextField hint="Entrer un mot" [(ngModel)]="couleur"></TextField>
+    <Button text="Creer" (tap)="creer(couleur)"></Button>
+
+    <GridLayout>
+        <StackLayout>
+            <StackLayout *ngFor="let t of tab; let i = index">
+                <Label [text]="t" textWrap="true"></Label>
+                <Button text="Supprimer" (tap)="supprimer(i)" style="width:30%;"></Button>
+            </StackLayout>
+        </StackLayout>
+    </GridLayout>
+</StackLayout>
