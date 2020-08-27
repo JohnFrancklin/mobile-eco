@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Page} from 'tns-core-modules/ui/page/page';
+import { Page } from 'tns-core-modules/ui/page/page';
+import * as dialogs from "tns-core-modules/ui/dialogs";
+
 
 @Component({
   selector: 'ns-list',
@@ -7,20 +9,38 @@ import { Page} from 'tns-core-modules/ui/page/page';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-tab=[]
+  tab = []
   constructor(private page: Page) { }
 
-creer(monPrenom,monAge){
-  let personne={
-    prenom : monPrenom,
-    age : monAge
-  };
- // alert(personne);
-  this.tab.push(personne)
-}
-supprimer(i){
-  this.tab.splice(i,1);
-}
+  creer(monPrenom, monAge) {
+
+    let personne = {
+      prenom: monPrenom,
+      age: monAge
+    };
+    /*Pusher à la fin*/
+    this.tab.push(personne)
+    /*Pusher au debut*/
+    this.tab.unshift(personne)
+    /*Verifier si in element existe dejà*/
+    if (this.tab.indexOf(personne)! == 2) {
+      alert("La valeur existe!")
+    } else {
+      alert(" La valeur n'existe pas!")
+    }
+  }
+
+  supprimer(i) {
+    //this.tab.splice(i,1);
+    dialogs.confirm("voulez vous supprimer").then(isSure => {
+      console.log("le resultat si true ou false" + isSure);
+      if (isSure == true) {
+        this.tab.splice(i, 1)
+      } else {
+
+      }
+    });
+  }
   ngOnInit(): void {
     this.page.actionBarHidden = true;
   }

@@ -4,7 +4,7 @@
     <Button text="Creer" (tap)="creer(monPrenom,monAge)"></Button>
     <GridLayout>
         <StackLayout>
-            <StackLayout *ngFor="let t of tab; let i = index" >
+            <StackLayout *ngFor="let t of tab; let i = index">
                 <Label [text]="t.prenom"></Label>
                 <Label [text]="t.age"></Label>
                 <Button text="Supprimer" (tap)="supprimer(i)" style="width:30%;"></Button>
