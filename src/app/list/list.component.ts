@@ -20,14 +20,16 @@ export class ListComponent implements OnInit {
     };
     /*Pusher à la fin*/
     this.tab.push(personne)
+    
     /*Pusher au debut*/
-    this.tab.unshift(personne)
+    //this.tab.unshift(personne)
+
     /*Verifier si in element existe dejà*/
-    if (this.tab.indexOf(personne)! == 2) {
+    /*if (this.tab.indexOf(personne)! == 2) {
       alert("La valeur existe!")
     } else {
       alert(" La valeur n'existe pas!")
-    }
+    }*/
   }
 
   supprimer(i) {
@@ -41,6 +43,18 @@ export class ListComponent implements OnInit {
       }
     });
   }
+
+/*Supprimer tous les elements*/
+ suppr(i){
+  dialogs.confirm("voulez vous vraiment supprimer tout").then(isSure => {
+    console.log("le resultat si true ou false" + isSure);
+    if (isSure == true) {
+      this.tab.splice(i)
+    } else {
+
+    }
+  });
+ }
   ngOnInit(): void {
     this.page.actionBarHidden = true;
   }
