@@ -1,15 +1,20 @@
-<StackLayout class="head">
-    <TextField hint="Entrer le prenom" [(ngModel)]="monPrenom"></TextField>
-    <TextField hint="Entrer l'age" [(ngModel)]="monAge"></TextField>
-    <Button text="Creer" (tap)="creer(monPrenom,monAge)"></Button>
-    <GridLayout>
-        <StackLayout>
-            <StackLayout *ngFor="let t of tab; let i = index">
-                <Label [text]="t.prenom"></Label>
-                <Label [text]="t.age"></Label>
-                <Button text="Supprimer" (tap)="supprimer(i)" style="width:30%;"></Button>
+<ScrollView orientaton="horizontal">
+    <StackLayout class="head">
+        <TextField class="input input-field" hint="Entrer le prenom" [(ngModel)]="monPrenom"></TextField>
+        <TextField class="input  input-field" hint="Entrer l'age" [(ngModel)]="monAge"></TextField>
+        <Button class="btn-create" text="Creer" (tap)="creer(monPrenom,monAge)"></Button>
+
+        <GridLayout>
+            <StackLayout>
+                <StackLayout *ngFor="let t of tab; let i = index" class="inf">
+                    <GridLayout>
+                        <Label class="prenom" [text]="t.prenom"></Label>
+                        <Label class="age" [text]="t.age"></Label>
+                        <Button class="btn-suppr" text="Supprimer" (tap)="supprimer(i)" style="width:30%;"></Button>
+                    </GridLayout>
+                </StackLayout>
+                <Button class="btn-supprimer" text="Supprimer tout" (tap)="suppr(i)" style="width:30%;"></Button>
             </StackLayout>
-            <Button text="Supprimer tout" (tap)="suppr(i)" style="width:30%;"></Button>
-        </StackLayout>
-    </GridLayout>
-</StackLayout>
+        </GridLayout>
+    </StackLayout>
+</ScrollView>
