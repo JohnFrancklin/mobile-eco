@@ -2,5 +2,42 @@
     background-color: burlywood;
     padding: 40px;
 }
-
+.input{
+    background-color: white;
+    margin-top: 60px;
+    font-family: 'serif';
+    font-size: 16;
+}
+.btn-create{
+    font-family: 'serif';
+    background-color: rgb(77, 77, 255);
+    border-radius: 20px;
+    font-size: 16;
+    color: white;
+}
+.text{
+    font-family:'serif';
+    font-size: 16;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.inf{
+    background-color: rgb(190, 162, 126);
+    margin: 40px 40px 40px 40px;
+    height: 150px;
+}
+.btn-suppr{
+    background-color: rgb(212, 77, 77);
+    font-family: 'serif';
+    color: white;
+    border-radius: 20px;
+    horizontal-align:right;
+    height: 90px;
+}
+.btn-supprimer{
+    background-color: rgb(212, 77, 77);
+    font-family: 'serif';
+    color: white;
+    border-radius: 20px;
+}
 

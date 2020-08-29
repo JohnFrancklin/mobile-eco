@@ -5,8 +5,8 @@
 }
 .input{
     font-family: 'serif';
-    font-size: 16;
     placeholder-color:#b5b5b5;
+    font-size:16
 }
 .input-field{
     background-color: white;

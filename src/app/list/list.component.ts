@@ -10,6 +10,8 @@ import * as dialogs from "tns-core-modules/ui/dialogs";
 })
 export class ListComponent implements OnInit {
   tab = []
+  personne: any;
+
   constructor(private page: Page) { }
 
   creer(monPrenom, monAge) {
@@ -18,9 +20,10 @@ export class ListComponent implements OnInit {
       prenom: monPrenom,
       age: monAge
     };
+
     /*Pusher à la fin*/
     this.tab.push(personne)
-    
+
     /*Pusher au debut*/
     //this.tab.unshift(personne)
 
@@ -34,7 +37,11 @@ export class ListComponent implements OnInit {
 
   supprimer(i) {
     //this.tab.splice(i,1);
-    dialogs.confirm("voulez vous supprimer").then(isSure => {
+    dialogs.confirm({
+      title: "Voulez vous vraiment supprimer",
+      cancelButtonText: "annuler",
+      okButtonText: "Supprimer"
+    }).then(isSure => {
       console.log("le resultat si true ou false" + isSure);
       if (isSure == true) {
         this.tab.splice(i, 1)
@@ -44,17 +51,27 @@ export class ListComponent implements OnInit {
     });
   }
 
-/*Supprimer tous les elements*/
- suppr(i){
-  dialogs.confirm("voulez vous vraiment supprimer tout").then(isSure => {
-    console.log("le resultat si true ou false" + isSure);
-    if (isSure == true) {
-      this.tab.splice(i)
-    } else {
+  /*Supprimer tous les elements*/
+  suppr(i) {
+    dialogs.confirm({
+      title: "Voulez vous vraiment supprimer tout",
+      cancelButtonText: "annuler",
+      okButtonText: "Supprimer"
+    }).then(isSure => {
+      console.log("le resultat si true ou false" + isSure);
+      if (isSure == true) {
+        this.tab.splice(i)
+      } else {
 
-    }
-  });
- }
+      }
+    });
+    //this.tab = []; 
+  }
+
+  ajouter(etude) {
+    this.personne.etude = "Developpeur"
+    alert(this.personne.etude)
+  }
   ngOnInit(): void {
     this.page.actionBarHidden = true;
   }
