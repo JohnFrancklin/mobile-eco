@@ -1,13 +1,18 @@
-<StackLayout class="head">
-    <TextField hint="Entrer un mot" [(ngModel)]="couleur"></TextField>
-    <Button text="Creer" (tap)="creer(couleur)"></Button>
+<ScrollView orientaton="horizontal">
+    <StackLayout class="head">
+        <TextField class="input" hint="" [(ngModel)]="couleur"></TextField>
+        <Button class="btn-create" text="Creer" (tap)="creer(couleur)"></Button>
 
-    <GridLayout>
-        <StackLayout>
-            <StackLayout *ngFor="let t of tab; let i = index">
-                <Label [text]="t" textWrap="true"></Label>
-                <Button text="Supprimer" (tap)="supprimer(i)" style="width:30%;"></Button>
+        <GridLayout>
+            <StackLayout>
+                <StackLayout *ngFor="let t of tab; let i = index" class="inf">
+                    <GridLayout>
+                        <Label class="text" [text]="t" textWrap="true"></Label>
+                        <Button class="btn-suppr" text="Supprimer" (tap)="supprimer(i)" style="width:30%;"></Button>
+                    </GridLayout>
+                </StackLayout>
+                <Button class="btn-supprimer" text="Supprimer tout" (tap)="suppr(i)" style="width:30%;"></Button>
             </StackLayout>
-        </StackLayout>
-    </GridLayout>
-</StackLayout>
+        </GridLayout>
+    </StackLayout>
+</ScrollView>

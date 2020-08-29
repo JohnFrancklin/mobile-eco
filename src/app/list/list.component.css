@@ -1,4 +1,56 @@
 .head{
     background-color: skyblue;
     padding: 20px;
+    padding-top: 80px;
+}
+.input{
+    font-family: 'serif';
+    placeholder-color:#b5b5b5;
+    font-size:16
+}
+.input-field{
+    background-color: white;
+}
+.btn-create{
+    font-family: 'serif';
+    background-color: rgb(77, 77, 255);
+    border-radius: 90px;
+    height: 150px;
+    width: 85%;
+    margin-bottom: 50px;
+    font-size: 20;
+    color: white;
+}
+/*.body{
+    background-color: rgb(249, 249, 253);
+    margin-right: 30px;
+    margin-left: 40px;
+}*/
+.inf{
+    background-color: white;
+    margin: 20px 40px 40px 40px;
+    height: 120px;
+}
+.prenom{
+    font-family: 'serif';
+    margin-left: 30px;
+}
+.age{
+    font-family: 'serif';
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.btn-suppr{
+    background-color: rgb(212, 77, 77);
+    font-family: 'serif';
+    color: white;
+    border-radius: 20px;
+    horizontal-align:right;
+    height: 90px;
+}
+.btn-supprimer{
+    background-color: rgb(212, 77, 77);
+    font-family: 'serif';
+    color: white;
+    border-radius: 20px;
 }
