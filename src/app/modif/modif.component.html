@@ -1,0 +1,32 @@
+<ScrollView orientaton="vertical">
+    <StackLayout class="head">
+        <GridLayout class="information_name">
+            <Label class="text" text="Nom"></Label>
+            <TextField class="input input-field" hint="" [(ngModel)]="personne.nom"></TextField>
+        </GridLayout>
+        <GridLayout class="information">
+            <Label class="text" text="Age"></Label>
+            <TextField class="input  input-field" hint="" [(ngModel)]="personne.age"></TextField>
+        </GridLayout>
+        <GridLayout class="information">
+            <Label class="text" text="Adresse"></Label>
+            <TextField class="input  input-field" hint="" [(ngModel)]="personne.address" ></TextField>
+        </GridLayout>
+        <Button class="btn-modif" text="Modifier" (tap)="modif(personne,i)" ></Button>
+
+        <ScrollView orientaton="horizontal" height="270">
+            <GridLayout class="body">
+                <StackLayout>
+                    <GridLayout class="grid_1" *ngFor="let o of objet; let i = index" (tap)="afficher(objet,i)">
+                        <FlexboxLayout justifyContent="space-between">
+                            <Label class="inf_nom" [text]="o.nom"></Label>
+                            <Label class="inf_age" [text]="o.age"></Label>
+                        </FlexboxLayout>
+                        <Label class="inf_address" [text]="o.address"></Label>
+                        <Label class="border"></Label>
+                    </GridLayout>
+                </StackLayout>
+            </GridLayout>
+        </ScrollView>
+    </StackLayout>
+</ScrollView>

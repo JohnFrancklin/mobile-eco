@@ -15,16 +15,20 @@ export class StatusComponent implements OnInit {
 
   creer(couleur) {
     /*Pusher un element a la fin d'un tableau */
-    this.tab.push(couleur);
+    //this.tab.push(couleur);
 
     /*Pusher un element au debut d'un tableau*/
-    this.tab.unshift(couleur);
+    //this.tab.unshift(couleur);
 
     /*Connaitre la longueur d'un tableau*/
     //alert(this.tab.length);
 
-    /*Trouver un element dans un tableau*/
-    alert( this.tab.indexOf("Gris"));
+    if (this.tab.indexOf(couleur) !== -1) {
+      alert("la valeur existe")
+    } else {
+      alert("la valeur n'existe pas");
+      this.tab.push(couleur);
+    }
   }
 
   supprimer(i) {

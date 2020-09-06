@@ -3,7 +3,6 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
 
 import { DetailsUserComponent } from './details-user/details-user.component';
@@ -22,6 +21,7 @@ import { TestComponent } from './test/test.component';
 import { StatusComponent } from './status/status.component';
 import { ListComponent } from './list/list.component';
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
+import { ModifComponent } from './modif/modif.component';
 
 @NgModule({
     bootstrap: [
@@ -36,13 +36,13 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
     declarations: [
         AppComponent,
         LoginComponent,
-        RegisterComponent,
         UserComponent,
         DetailsUserComponent,
         ProduitComponent,
         TestComponent,
         StatusComponent,
         ListComponent,
+        ModifComponent,
     ],
     providers: [],
     schemas: [

@@ -48,6 +48,14 @@
     horizontal-align:right;
     height: 90px;
 }
+.btn-modif{
+    background-color: rgb(212, 77, 77);
+    font-family: 'serif';
+    color: white;
+    border-radius: 20px;
+    horizontal-align:center;
+    height: 90px;
+}
 .btn-supprimer{
     background-color: rgb(212, 77, 77);
     font-family: 'serif';

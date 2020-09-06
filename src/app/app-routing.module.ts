@@ -8,11 +8,12 @@ import { ProduitComponent } from "./produit/produit.component";
 import { TestComponent } from "./test/test.component";
 import { StatusComponent } from "./status/status.component";
 import { ListComponent } from "./list/list.component";
+import { ModifComponent } from "./modif/modif.component";
 
 
 
 const routes: Routes = [
-    { path: "", redirectTo: "/list", pathMatch: "full" },
+    { path: "", redirectTo: "/modif", pathMatch: "full" },
     { path: "login", component: LoginComponent },
     { path: "user", component: UserComponent},
     { path: "detailsUser" , component: DetailsUserComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
     { path: "test" , component: TestComponent},
     { path: "status" , component: StatusComponent},
     { path: "list" , component: ListComponent},
+    { path: "modif" , component: ModifComponent},
 ];
 
 @NgModule({
