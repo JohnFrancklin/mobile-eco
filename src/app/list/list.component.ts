@@ -10,7 +10,6 @@ import * as dialogs from "tns-core-modules/ui/dialogs";
 })
 export class ListComponent implements OnInit {
   tab = []
-  personne: any;
 
   constructor(private page: Page) { }
 
@@ -22,23 +21,22 @@ export class ListComponent implements OnInit {
     };
 
     /*Pusher à la fin*/
-    this.tab.push(personne)
+    if (this.tab.indexOf(personne) !== -1) {
+      alert("La valeur existe")
+    } else {
+      alert("La valeur n'existe pas")
+      this.tab.push(personne)
+    }
+   
 
     /*Pusher au debut*/
     //this.tab.unshift(personne)
-
-    /*Verifier si in element existe dejà*/
-    /*if (this.tab.indexOf(personne)! == 2) {
-      alert("La valeur existe!")
-    } else {
-      alert(" La valeur n'existe pas!")
-    }*/
   }
 
   supprimer(i) {
     //this.tab.splice(i,1);
     dialogs.confirm({
-      title: "Voulez vous vraiment supprimer",
+      message: "Voulez vous vraiment supprimer",
       cancelButtonText: "annuler",
       okButtonText: "Supprimer"
     }).then(isSure => {
@@ -54,7 +52,7 @@ export class ListComponent implements OnInit {
   /*Supprimer tous les elements*/
   suppr(i) {
     dialogs.confirm({
-      title: "Voulez vous vraiment supprimer tout",
+      message: "Voulez vous vraiment supprimer tout",
       cancelButtonText: "annuler",
       okButtonText: "Supprimer"
     }).then(isSure => {
@@ -66,11 +64,6 @@ export class ListComponent implements OnInit {
       }
     });
     //this.tab = []; 
-  }
-
-  ajouter(etude) {
-    this.personne.etude = "Developpeur"
-    alert(this.personne.etude)
   }
   ngOnInit(): void {
     this.page.actionBarHidden = true;
