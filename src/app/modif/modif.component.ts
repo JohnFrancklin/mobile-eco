@@ -49,12 +49,21 @@ export class ModifComponent implements OnInit {
 
   constructor(private page: Page) { }
   afficher(objet, i) {
-    this.personne = objet[i]
+    this.personne.nom = objet[i].nom;
+    this.personne.age = objet[i].age;
+    this.personne.address = objet[i].address;
+
+    //this.indice = i;
+    this.personne['indexSelectionned'] = i;
+    console.log(this.personne)
   }
   modif(personne,i) {
-    this.objet[i] = personne;
+    this.objet[this.personne['indexSelectionned']]=personne;
+
+    /*this.objet[this.personne['indexSelectionned']].nom = personne.nom;
+    this.objet[this.personne['indexSelectionned']].age = personne.age;
+    this.objet[this.personne['indexSelectionned']].address = personne.address;*/
     console.log(i);
-    
   }
   ngOnInit(): void {
     this.page.actionBarHidden = true;
