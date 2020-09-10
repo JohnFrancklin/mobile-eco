@@ -15,7 +15,7 @@ import { RequettebackComponent } from "./requetteback/requetteback.component";
 
 
 const routes: Routes = [
-    { path: "", redirectTo: "/requetteback", pathMatch: "full" },
+    { path: "", redirectTo: "/produit", pathMatch: "full" },
     { path: "login", component: LoginComponent },
     { path: "user", component: UserComponent},
     { path: "detailsUser" , component: DetailsUserComponent},

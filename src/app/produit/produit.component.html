@@ -1,8 +1,8 @@
 <ScrollView orientation="vertical">
     <StackLayout class="head">
         <GridLayout>
-            <Image class="icon_menu" src="~/image/menu.png"></Image>
-            <Image class="icon_hamper" src="~/image/grocery.png"></Image>
+            <Label text="&#xf039;" class="fas icon_menu"></Label>
+            <Label text="&#xf07a;" class="fas icon_hamper"></Label>
         </GridLayout>
         <TextField class="input input-search" hint="Rechercher votre produit"></TextField>
 
@@ -14,13 +14,13 @@
                             <Label class="text" [text]="t.text"></Label >
                             <GridLayout class="border">
                                 <Label class="number" [text]="t.number"></Label>
-                                <Image class="grade" src="~/image/grade2.png"></Image>
+                                <Label text="&#xf005;" class="fas grade"></Label>
                             </GridLayout>
                             <Label class="price" [text]="t.price"></Label>
                             <GridLayout class="icon">
-                                <Image class="icon_grade" src="~/image/grade.png"></Image >
-                                <Image class="icon_favorite" src="~/image/favorite.png"></Image>
-                                <Image class="icon_grocery" src="~/image/grocery.png"></Image>
+                                <Label text="&#xf005;" class="fas icon_grade"></Label>
+                                <Label text="&#xf004;" class="fas icon_favorite"></Label>
+                                <Label text="&#xf07a;" class="fas icon_grocery"></Label>
                             </GridLayout>
                         </StackLayout>
                     </StackLayout>
