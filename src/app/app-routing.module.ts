@@ -10,11 +10,12 @@ import { TestSoundComponent } from "./test-sound/test-sound.component";
 import { StatusComponent } from "./status/status.component";
 import { ListComponent } from "./list/list.component";
 import { ModifComponent } from "./modif/modif.component";
+import { RequettebackComponent } from "./requetteback/requetteback.component";
 
 
 
 const routes: Routes = [
-    { path: "", redirectTo: "/modif", pathMatch: "full" },
+    { path: "", redirectTo: "/requetteback", pathMatch: "full" },
     { path: "login", component: LoginComponent },
     { path: "user", component: UserComponent},
     { path: "detailsUser" , component: DetailsUserComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
     { path: "status" , component: StatusComponent},
     { path: "list" , component: ListComponent},
     { path: "modif" , component: ModifComponent},
+    { path: "requetteback" , component: RequettebackComponent},
 ];
 
 @NgModule({

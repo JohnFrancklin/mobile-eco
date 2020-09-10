@@ -23,6 +23,7 @@ import { StatusComponent } from './status/status.component';
 import { ListComponent } from './list/list.component';
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { ModifComponent } from './modif/modif.component';
+import { RequettebackComponent } from './requetteback/requetteback.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ModifComponent } from './modif/modif.component';
         // NgShadowModule,
         NativeScriptModule,
         AppRoutingModule,
-        NativeScriptFormsModule
+        NativeScriptFormsModule,
+        NativeScriptHttpClientModule
     ],
     declarations: [
         AppComponent,
@@ -46,6 +48,7 @@ import { ModifComponent } from './modif/modif.component';
         StatusComponent,
         ListComponent,
         ModifComponent,
+        RequettebackComponent,
     ],
     providers: [],
     schemas: [
