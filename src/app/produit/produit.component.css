@@ -1,13 +1,13 @@
 .head{
     background-color: #e4e4e4;
-    padding: 50px;
+    padding: 60px;
 }
 .icon_menu{
   font-size: 25%;
 }
 .icon_hamper{
     font-size: 25%;
-    margin-left: 880px;
+    horizontal-align:right;
 }
 .input{
     font-size:16;
@@ -67,7 +67,7 @@
 }
 .icon_favorite{
     font-size: 15%;
-    margin-left: 200px; 
+    margin-left:45% ;
 }
 .icon_grocery{
     font-size: 15%;
