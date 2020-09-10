@@ -3,12 +3,11 @@
     padding: 50px;
 }
 .icon_menu{
-    width: 96px;
-    horizontal-align: left;
+  font-size: 25%;
 }
 .icon_hamper{
-    width: 96px;
-    horizontal-align: right;
+    font-size: 25%;
+    margin-left: 880px;
 }
 .input{
     font-size:16;
@@ -37,19 +36,20 @@
     background-color:#003a88;
     border-radius: 10px;
     width: 130px;
-    height: 70px;
+    height: 60px;
     horizontal-align: left;
     margin-top: 20px;
 }
 .number{
-    font-size: 16;
+    font-size: 14;
     font-family: 'serif';
     color: white;
     margin-left: 20px;
 }
 .grade{
-    margin-left: 60px;
-    width: 50px;
+    color: #ffffff;
+    margin-left: 70px;
+    font-size: 12%;
  }
 .price{
     font-size: 16;
@@ -62,15 +62,15 @@
     margin-top:10;
 }
 .icon_grade{
-    width: 60px;
+    font-size: 15%;
     horizontal-align: left;
 }
 .icon_favorite{
-    width: 60px;
-    margin-left: 10px; 
+    font-size: 15%;
+    margin-left: 200px; 
 }
 .icon_grocery{
-    width: 60px;
+    font-size: 15%;
     horizontal-align: right;
 }
 

@@ -13,7 +13,7 @@ import { ModifComponent } from "./modif/modif.component";
 
 
 const routes: Routes = [
-    { path: "", redirectTo: "/modif", pathMatch: "full" },
+    { path: "", redirectTo: "/produit", pathMatch: "full" },
     { path: "login", component: LoginComponent },
     { path: "user", component: UserComponent},
     { path: "detailsUser" , component: DetailsUserComponent},
