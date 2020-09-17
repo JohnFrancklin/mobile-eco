@@ -22,6 +22,7 @@ import { StatusComponent } from './status/status.component';
 import { ListComponent } from './list/list.component';
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { ModifComponent } from './modif/modif.component';
+import { ProduitService } from "./produit.service";
 
 @NgModule({
     bootstrap: [
@@ -44,7 +45,7 @@ import { ModifComponent } from './modif/modif.component';
         ListComponent,
         ModifComponent,
     ],
-    providers: [],
+    providers: [ProduitService],
     schemas: [
         NO_ERRORS_SCHEMA
     ]

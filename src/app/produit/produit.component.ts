@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef  } from '@angular/core';
 import { Page} from 'tns-core-modules/ui/page/page';
+import { ProduitService } from '../produit.service';
 
 @Component({
   selector: 'ns-produit',
@@ -9,49 +10,18 @@ import { Page} from 'tns-core-modules/ui/page/page';
 
 export class ProduitComponent implements OnInit {
   @ViewChild("icon", { read: ElementRef, static:false }) view: ElementRef;
- 
-  tab = [
-    {
-      id: 1,
-      text: "MacBook air mi 2020",
-      number: 4,
-      price: "1000 ar",
-    },
-    {
-      id: 2,
-      text: "Telephone haute de gamme",
-      number: 5,
-      price: "1500 ar",
-    },
-    {
-      id: 3,
-      text: "Samsung galaxy tab 2",
-      number: 4,
-      price: "5400 ar",
-    },
-    {
-      id: 4,
-      text: "MacBook air mi 2020",
-      number: 4,
-      price: "1000 ar",
-    },
-    {
-      id: 5,
-      text: "MacBook air mi 2020",
-      number: 4,
-      price: "1000 ar",
-    },
-    {
-      id: 6,
-      text: "MacBook air mi 2020",
-      number: 4,
-      price: "1000 ar",
-    }
-  ]
+  produit: any;
 
-  constructor(private page: Page) { }
+  constructor(private page: Page,
+              private produitService: ProduitService,) { }
 
   ngOnInit(): void {
     this.page.actionBarHidden = true;
+    this.getProduit();
+  }
+
+  getProduit() {
+    this.produit = this.produitService.getProduit();
+    //console.log(this.produit)
   }
 }
