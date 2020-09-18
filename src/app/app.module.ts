@@ -25,6 +25,7 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { ModifComponent } from './modif/modif.component';
 import { RequettebackComponent } from './requetteback/requetteback.component';
 
+import { ProduitService } from "./produit.service";
 
 @NgModule({
     bootstrap: [
@@ -50,7 +51,7 @@ import { RequettebackComponent } from './requetteback/requetteback.component';
         ModifComponent,
         RequettebackComponent,
     ],
-    providers: [],
+    providers: [ProduitService],
     schemas: [
         NO_ERRORS_SCHEMA
     ]

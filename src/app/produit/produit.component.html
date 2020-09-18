@@ -8,15 +8,15 @@
 
         <GridLayout>
             <WrapLayout orientation="horizontal">
-                    <StackLayout class="contenu" *ngFor="let t of tab; let i = index">
+                    <StackLayout class="contenu" *ngFor="let p of produit; let i = index">
                         <Image class="image" src="~/image/image2.jpg"></Image>
                         <StackLayout class="all_inf_prod">
-                            <Label class="text" [text]="t.text"></Label >
+                            <Label class="text" text={{p.text}}></Label >
                             <GridLayout class="border">
-                                <Label class="number" [text]="t.number"></Label>
+                                <Label class="number" text={{p.number}}></Label>
                                 <Label text="&#xf005;" class="fas grade"></Label>
                             </GridLayout>
-                            <Label class="price" [text]="t.price"></Label>
+                            <Label class="price" text={{p.price}}></Label>
                             <GridLayout class="icon">
                                 <Label text="&#xf005;" class="fas icon_grade"></Label>
                                 <Label text="&#xf004;" class="fas icon_favorite"></Label>
