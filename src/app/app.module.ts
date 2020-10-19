@@ -26,6 +26,7 @@ import { ModifComponent } from './modif/modif.component';
 import { RequettebackComponent } from './requetteback/requetteback.component';
 
 import { ProduitService } from "./produit.service";
+import { InscriptionComponent } from './inscription/inscription.component';
 
 @NgModule({
     bootstrap: [
@@ -50,6 +51,7 @@ import { ProduitService } from "./produit.service";
         ListComponent,
         ModifComponent,
         RequettebackComponent,
+        InscriptionComponent,
     ],
     providers: [ProduitService],
     schemas: [

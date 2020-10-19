@@ -11,11 +11,12 @@ import { StatusComponent } from "./status/status.component";
 import { ListComponent } from "./list/list.component";
 import { ModifComponent } from "./modif/modif.component";
 import { RequettebackComponent } from "./requetteback/requetteback.component";
+import { InscriptionComponent } from "./inscription/inscription.component";
 
 
 
 const routes: Routes = [
-    { path: "", redirectTo: "/produit", pathMatch: "full" },
+    { path: "", redirectTo: "/inscription", pathMatch: "full" },
     { path: "login", component: LoginComponent },
     { path: "user", component: UserComponent},
     { path: "detailsUser" , component: DetailsUserComponent},
@@ -26,6 +27,7 @@ const routes: Routes = [
     { path: "list" , component: ListComponent},
     { path: "modif" , component: ModifComponent},
     { path: "requetteback" , component: RequettebackComponent},
+    { path: "inscription" , component: InscriptionComponent},
 ];
 
 @NgModule({
