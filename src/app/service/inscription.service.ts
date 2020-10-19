@@ -16,6 +16,6 @@ export class InscriptionService {
   constructor(private http: HttpClient) {}
 
   createUser(id,inscription ) {
-    return this.http.put<any[]>(endPoint+"/create/inscription/"+id, inscription, httpOptions);
+    return this.http.post<any[]>(endPoint+ id, inscription, httpOptions);
   }
 }
